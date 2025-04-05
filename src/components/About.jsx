@@ -1,5 +1,5 @@
 import React from 'react'
-import { Tilt } from 'react-tilt'
+import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { services } from '../constants'
@@ -8,7 +8,16 @@ import { SectionWrapper } from '../hoc'
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className="xs:w-[250px] w-full">
+    <Tilt  className="xs:w-[250px] w-full"
+    tiltMaxAngleX={45}
+    tiltMaxAngleY={45}
+    scale={1}
+    transitionSpeed={450}
+    glareEnable={true}
+    glareMaxOpacity={0.45}
+    glareColor="#ffffff"
+    glarePosition="all">
+      
       <motion.div
         variants={fadeIn("right", "spring", 0.5 *
           index, 0.75)}
