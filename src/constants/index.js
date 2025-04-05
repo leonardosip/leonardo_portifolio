@@ -86,8 +86,8 @@ import {
       date: "Julho 2024 - Janeiro 2025",
       points: [
         "Buscas SQL.",
-        "Documentava as pesquisas, para uso da diretoria.",
-        "Auxiliava no desenvolvimento.",
+        "Documentação de pesquisas para uso da diretoria.",
+        "Auxílio no desenvolvimento.",
         "Atendimento ao cliente.",
         
       ],
@@ -99,8 +99,8 @@ import {
       iconBg: "#E6DEDD",
       date: "Março 2024 - Julho 2024",
       points: [
-        "Desenvolvia CRUDS em ReactJs e Nodejs.",
-        "Ultilizava banco de dados  com POSTGRESQL.",
+        "Desenvolvimento de CRUDS em ReactJs e Nodejs.",
+        "Ultilização de banco de dados com POSTGRESQL.",
         "Versionamento de código com GIT.",
         "Relatórios e manual do sistema com MarkDown.",
       ],

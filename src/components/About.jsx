@@ -56,13 +56,15 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 0.1)}
         className='mt-4 text-secondary text-[17px] 
         max-w-3xl leading-[30px]'>
-        Formado em Análise e Desenvolvimento de Sistemas e atuo como Desenvolvedor Front-End
-        com um ano de experiência no mercado. Minha principal especialidade é o React, tecnologia
-        com a qual me sinto mais confiante e produtivo. Também tenho conhecimentos básicos
-        em algumas linguagens e APIs, como Nodejs e Java (Spring Boot), o que me permite
-        entender e colaborar com a parte de back-end quando necessário. Estou sempre buscando
-        evoluir tecnicamente, aprender novas ferramentas e contribuir com projetos
-        desafiadores e inovadores.
+        Sou formado em Análise e Desenvolvimento de Sistemas e atuo como
+         Desenvolvedor Front-End, com um ano de experiência no mercado.
+          Minha especialidade é o desenvolvimento com React, tecnologia 
+          na qual me sinto mais confiante e produtivo no dia a dia. 
+          Além disso, possuo conhecimentos básicos em linguagens e ferramentas 
+          do back-end, como Node.js e Java com Spring Boot, o que me permite compreender
+           melhor o fluxo das aplicações e colaborar de forma eficaz com as equipes de back-end.
+            Estou constantemente em busca de aprimoramento técnico, aprendizado de novas tecnologias
+             e envolvimento em projetos desafiadores e inovadores, onde eu possa contribuir de maneira significativa.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
