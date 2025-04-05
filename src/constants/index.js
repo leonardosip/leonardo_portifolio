@@ -9,7 +9,6 @@ import {
     tailwind,
     nodejs,
     git,
-    figma,
     cohab,
     click,
     jobit,
