@@ -23,7 +23,7 @@ const Hero = () => {
         </h1>
         <p className={`${styles.heroSubText} mt-2
         text-white-100`}>
-            Gosto de criar interfaces modernas <br 
+            Crio interfaces modernas <br 
             className='sm:block hidden'/>
              e dinâmicas para a web
         </p>
