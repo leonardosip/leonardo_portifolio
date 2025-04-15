@@ -1,10 +1,54 @@
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
+import { FaLinkedin, FaGithub, FaFilePdf } from "react-icons/fa";
 
 
 const Hero = () => {
   return (
+
+
+    
+
+
+      <>
+      
+    {/* ÍCONES  */}
+    <div className="absolute top-24 right-6 flex gap-10 z-50">
+
+      <a
+        href="https://www.linkedin.com/in/leonardo-silva-pereira-402333239/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition"
+      >
+        <FaLinkedin className="text-white group-hover:text-black text-6xl" />
+      </a>
+
+      <a
+        href="https://github.com/leonardosip"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition"
+      >
+        <FaGithub className="text-white group-hover:text-black text-6xl" />
+      </a>
+
+      <a
+        href="/Curriculo-Leonardo.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition"
+      >
+        <FaFilePdf className="text-white group-hover:text-black text-6xl" />
+      </a>
+    </div>
+
+    {/* HERO PRINCIPAL */}
+    <section className="...">
+      {/* Todo o conteúdo do seu Hero aqui */}
+    </section>
+
     <section className="relative w-full h-screen
      mx-auto">
       <div className={`${styles.paddingX} absolute
@@ -57,6 +101,7 @@ const Hero = () => {
 
       </div>
     </section>
+    </>
   )
 }
 
