@@ -14,15 +14,17 @@ import javascript from "./tech/javascript.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
-import threejs from "./tech/threejs.svg";
 
 
 import click from "./company/click.png";
 import cohab from "./company/cohab.png";
 
+import port from "./port.png"
+import filmes from "./filmes.png"
+import login from "./login.png"
 
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+
+
 
 export {
   logo,
@@ -40,9 +42,9 @@ export {
   nodejs,
   reactjs,
   tailwind,
-  threejs,
   click,
   cohab,
-  jobit,
-  tripguide,
+  port,
+  filmes,
+  login
 };

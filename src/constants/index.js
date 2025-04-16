@@ -11,9 +11,9 @@ import {
     git,
     cohab,
     click,
-    jobit,
-    tripguide,
-    threejs,
+    port,
+    filmes,
+    login,
   } from "../assets";
   
   export const navLinks = [
@@ -107,76 +107,74 @@ import {
     },
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
+  
   
   const projects = [
     {
-      name: "Job IT",
+      name: "Portifolio-3d",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Portfólio interativo feito com React, Tailwind e Three.js, apresentando meus projetos, contatos e currículo em um layout moderno e responsivo..",
       tags: [
         {
-          name: "react",
+          name: "REACT",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "taiwindcss",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "threejs",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: port,
+      source_code_link: "https://github.com/leonardosip/leonardo_portifolio",
     },
+
     {
-      name: "Trip Guide",
+      name: "Projeto-Filmes",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Aplicação web desenvolvida com React que consome uma API pública de filmes. Permite aos usuários buscar filmes, visualizar informações detalhadas como sinopse, nota e imagem, além de salvar seus favoritos no Local Storage para acesso rápido e persistente. Conta com navegação dinâmica usando React Router e uma interface responsiva e intuitiva...",
       tags: [
         {
-          name: "nextjs",
+          name: "REACT",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "API",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "CSS",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: filmes,
+      source_code_link: "https://github.com/leonardosip/projeto-filmes",
+    },
+
+    {
+      name: "Projeto-Login",
+      description:
+        "Aplicação web desenvolvida com React que utiliza o Firebase Authentication para gerenciamento de login. Permite aos usuários acessarem o sistema de forma segura por meio de email e senha, com validação em tempo real. A autenticação é integrada ao banco de dados do Firebase, garantindo persistência e segurança dos dados. A interface é simples, responsiva e intuitiva, ideal para fluxos de autenticação em aplicações modernas. Utiliza React Router para navegação e componentes reutilizáveis para manter o código organizado e escalável....",
+      tags: [
+        {
+          name: "REACT",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "FIREBASE",
+          color: "green-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: login,
+      source_code_link: "https://github.com/leonardosip/projeto-log",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };
