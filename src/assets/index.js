@@ -18,6 +18,7 @@ import tailwind from "./tech/tailwind.png";
 
 import click from "./company/click.png";
 import cohab from "./company/cohab.png";
+import nobis from "./company/nobis.png"
 
 import port from "./port.png"
 import filmes from "./filmes.png"
@@ -44,6 +45,7 @@ export {
   tailwind,
   click,
   cohab,
+  nobis,
   port,
   filmes,
   login
