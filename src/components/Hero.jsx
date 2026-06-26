@@ -1,10 +1,31 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
-import { FaLinkedin, FaGithub, FaFilePdf } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaFilePdf, FaLink } from "react-icons/fa";
 
 
 const Hero = () => {
+  const [isLinksOpen, setIsLinksOpen] = useState(false);
+
+  const socialLinks = [
+    {
+      name: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/leonardo-silva-pereira-402333239/',
+      icon: <FaLinkedin className="text-2xl" />,
+    },
+    {
+      name: 'GitHub',
+      href: 'https://github.com/leonardosip',
+      icon: <FaGithub className="text-2xl" />,
+    },
+    {
+      name: 'Curriculo',
+      href: '/Curriculo-Leonardo.pdf',
+      icon: <FaFilePdf className="text-2xl" />,
+    },
+  ];
+
   return (
 
 
@@ -13,35 +34,34 @@ const Hero = () => {
 
       <>
       
-    {/* ÍCONES  */}
-    <div className="absolute top-24 right-6 flex gap-10 z-50">
-
-      <a
-        href="https://www.linkedin.com/in/leonardo-silva-pereira-402333239/"
-        target="_blank"
-        rel="noopener noreferrer"
+    {/* LINKS  */}
+    <div className="absolute top-24 right-6 z-50">
+      <button
+        type="button"
+        onClick={() => setIsLinksOpen((current) => !current)}
+        aria-expanded={isLinksOpen}
+        aria-label="Abrir links"
         className="group w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition"
       >
-        <FaLinkedin className="text-white group-hover:text-black text-6xl" />
-      </a>
+        <FaLink className="text-white group-hover:text-black text-3xl" />
+      </button>
 
-      <a
-        href="https://github.com/leonardosip"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition"
-      >
-        <FaGithub className="text-white group-hover:text-black text-6xl" />
-      </a>
-
-      <a
-        href="/Curriculo-Leonardo.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition"
-      >
-        <FaFilePdf className="text-white group-hover:text-black text-6xl" />
-      </a>
+      {isLinksOpen && (
+        <div className="absolute right-0 mt-3 w-44 rounded-lg bg-black/80 border border-white/10 backdrop-blur-md overflow-hidden">
+          {socialLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 px-4 py-3 text-white hover:bg-white hover:text-black transition"
+            >
+              {link.icon}
+              <span className="text-sm font-medium">{link.name}</span>
+            </a>
+          ))}
+        </div>
+      )}
     </div>
 
     {/* HERO PRINCIPAL */}
